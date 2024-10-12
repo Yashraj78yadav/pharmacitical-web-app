@@ -1,0 +1,246 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003399;
+    padding: 15px 20px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #003399;
+    border-radius: 3px;
+}
+
+.search-button {
+    background-color: #003399;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #003399;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Sub-navbar Styles */
+.sub-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    color: #003399;
+}
+
+.sub-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.sub-nav-links li {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.phone-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+
+/* Banner Section */
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Product Container Styles */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Category Section Styles */
+.category {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #003399;
+}
+
+/* Product Card Styles */
+.product-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.product-card h4 {
+    font-size: 14px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.discount {
+    font-size: 14px;
+    color: #e60000;
+}
+
+/* See More Button */
+.see-more {
+    font-size: 14px;
+    color: #003399;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+/* Product Categories */
+.product-category {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.category-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-item {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 30%;
+}
+
+.category-item button {
+    background-color: #004080;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Deals of the Day */
+.deals-of-the-day {
+    padding: 20px;
+}
+
+.deal-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.deal-item {
+    text-align: center;
+    width: 30%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.deal-item img {
+    width: 100%;
+    height: auto;
+}
