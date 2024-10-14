@@ -18,6 +18,11 @@ body {
     background-color: #003399;
     padding: 15px 20px;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    /* background-color: #fff; Optional: Keep background color to ensure visibility */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Add shadow for better visibility */
 }
 
 .logo-container {
@@ -49,16 +54,20 @@ body {
 }
 
 .search-button {
-    background-color: #003399;
+    /* background-color: #003399; */
     border: none;
     cursor: pointer;
-    padding: 5px;
+    /* padding: 5px; */
     margin-left: 5px;
+    position: relative;
+    left: -32px;
+    
+
 }
 
 .search-icon {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
 }
 
 .login-container {
@@ -75,6 +84,7 @@ body {
     cursor: pointer;
     font-size: 16px;
 }
+
 
 /* Sub-navbar Styles */
 .sub-navbar {
@@ -97,6 +107,10 @@ body {
     font-size: 14px;
 }
 
+.sub-nav-links li:hover {
+    text-decoration: underline;
+}
+
 .contact-info {
     display: flex;
     align-items: center;
@@ -111,16 +125,61 @@ body {
 
 
 /* Banner Section */
-.banner img {
+/* Carousel container */
+.carousel-container {
     width: 100%;
-    height: auto;
+    overflow: hidden;
+    position: relative;
+    height: 400px; /* Adjust the height based on your preference */
 }
 
+/* Carousel Slider */
+.carousel-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-    padding: 20px;
+/* Carousel Item */
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Optional: Navigation buttons (Prev/Next) */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/*  Container-heading Styles */
+.container-heading h2 {
+    color: #003399;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+    padding-left: 25%;
 }
 
 /* Product Container Styles */
@@ -196,31 +255,93 @@ body {
 }
 
 /* Product Categories */
-.product-category {
-    padding: 20px;
-    background-color: #f5f5f5;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
 }
 
-.category-row {
+.deals-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 80%;
+    position: relative;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 20px 0;
+}
+
+.slider {
     display: flex;
-    justify-content: space-around;
+    transition: transform 0.5s ease-in-out;
 }
 
-.category-item {
+.product-card {
+    width: 250px;
+    margin: 0 10px;
+    display: inline-block;
+    vertical-align: top;
     background-color: white;
     padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border: 1px solid #ccc;
-    width: 30%;
 }
 
-.category-item button {
-    background-color: #004080;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    cursor: pointer;
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
 }
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+
+.offer {
+    color: orange;
+    font-size: 14px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
 
 /* Deals of the Day */
 .deals-of-the-day {
