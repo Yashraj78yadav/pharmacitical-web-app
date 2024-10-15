@@ -125,35 +125,35 @@ body {
 
 
 /* Banner Section */
-/* Carousel container */
-.carousel-container {
+/* Banner container */
+.Banner-container {
     width: 100%;
     overflow: hidden;
     position: relative;
     height: 400px; /* Adjust the height based on your preference */
 }
 
-/* Carousel Slider */
-.carousel-slider {
+/* Banner Slider */
+.Banner-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 100%;
 }
 
-/* Carousel Item */
-.carousel-item {
+/* Banner Item */
+.Banner-item {
     min-width: 100%;
     height: 100%;
 }
 
-.carousel-item img {
+.Banner-item img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio */
 }
 
 /* Optional: Navigation buttons (Prev/Next) */
-.carousel-prev, .carousel-next {
+.Banner-prev, .Banner-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -165,11 +165,11 @@ body {
     z-index: 10;
 }
 
-.carousel-prev {
+.Banner-prev {
     left: 10px;
 }
 
-.carousel-next {
+.Banner-next {
     right: 10px;
 }
 
@@ -255,13 +255,6 @@ body {
 }
 
 /* Product Categories */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-}
-
 .deals-container {
     text-align: center;
     margin: 20px auto;

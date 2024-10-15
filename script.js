@@ -1,8 +1,8 @@
-// JavaScript for Carousel Auto-Sliding
-const carousel = document.querySelector('.carousel-slider');
-const carouselItems = document.querySelectorAll('.carousel-item');
+// JavaScript for Banner Auto-Sliding
+const Banner = document.querySelector('.Banner-slider');
+const BannerItems = document.querySelectorAll('.Banner-item');
 let currentIndex = 0;
-const totalItems = carouselItems.length;
+const totalItems = BannerItems.length;
 const slideInterval = 3000; // 3 seconds
 
 // Function to change slide
@@ -11,31 +11,30 @@ function changeSlide() {
     if (currentIndex >= totalItems) {
         currentIndex = 0; // Loop back to the first slide
     }
-    updateCarouselPosition();
-}
-
-// Update the position of the carousel
-function updateCarouselPosition() {
-    carousel.style.transform = `translateX(${-currentIndex * 100}%)`;
+    updateBannerPosition();
+}Banner
+// Update the position of the Banner
+function updateBannerPosition() {
+    Banner.style.transform = `translateX(${-currentIndex * 100}%)`;
 }
 
 // Auto-slide every few seconds
 let autoSlide = setInterval(changeSlide, slideInterval);
 
 // Optional: Navigation Controls
-const prevButton = document.querySelector('.carousel-prev');
-const nextButton = document.querySelector('.carousel-next');
+const prevButton = document.querySelector('.Banner-prev');
+const nextButton = document.querySelector('.Banner-next');
 
 if (prevButton && nextButton) {
     prevButton.addEventListener('click', () => {
         currentIndex = currentIndex === 0 ? totalItems - 1 : currentIndex - 1;
-        updateCarouselPosition();
+        updateBannerPosition();
         resetAutoSlide();
     });
 
     nextButton.addEventListener('click', () => {
         currentIndex = currentIndex === totalItems - 1 ? 0 : currentIndex + 1;
-        updateCarouselPosition();
+        updateBannerPosition();
         resetAutoSlide();
     });
 }
