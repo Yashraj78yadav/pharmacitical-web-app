@@ -48,3 +48,16 @@ function resetAutoSlide() {
 
 
 // sliding effect of card section
+
+
+
+// card section
+
+
+    document.querySelectorAll('.cart-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Item added to cart!');
+        });
+    });
+
+
