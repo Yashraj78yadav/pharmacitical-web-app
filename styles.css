@@ -383,6 +383,7 @@ body {
 /* footer section */
 
 
+/* Footer Base Styling */
 footer {
     background-color: #e9e4e4;
     padding: 40px 20px;
@@ -428,6 +429,24 @@ footer {
     color: #007bff;
 }
 
+/* Connect Section Styling */
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* App Store Icons */
 .app-store-icons a {
     display: inline-block;
     margin-right: 10px;
@@ -437,6 +456,7 @@ footer {
     width: 120px;
 }
 
+/* Footer Bottom Styling */
 .footer-bottom {
     text-align: center;
     border-top: 1px solid #e3aeae;
@@ -448,4 +468,3 @@ footer {
 .footer-bottom p {
     margin-bottom: 10px;
 }
-
