@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiyogi-Pharmaceutical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-container">
+  <!-- Left Section for Sliding Images/Text -->
+  <div class="left-section">
+    <div class="slide active">
+      <img src="https://img.freepik.com/premium-vector/medical-private-anonymous-delivery-make-it-more-medical-simple-with-white-background_764382-203311.jpg" alt="Health Queries">
+      <h3>Health Related Solution?</h3>
+      <p>Consult With Us from anywhere, anytime . We guarantee your privacy.</p>
+    </div>
+    <div class="slide">
+      <img src="https://content.presspage.com/uploads/1938/1920_wholehealththroughintegratedsystemofcare.jpg?10000" alt="health query">
+      <h3>Secure Medicine</h3>
+      <p>Your privacy is our top priority. Get secure medical consultations.</p>
+    </div>
+    <!-- Slider Dots -->
+    <div class="slider-dots">
+      <span class="dot active" onclick="changeSlide(0)"></span>
+      <span class="dot" onclick="changeSlide(1)"></span>
+    </div>
+  </div>
+
+  <!-- Right Section for Login Form -->
+  <div class="right-section">
+    <h2>Login</h2>
+    <p>Get access to your orders, lab tests & doctor consultations</p>
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Username" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email ID or Mobile Number" required>
+      </div>
+      <button type="submit" class="login-button">LOGIN</button>
+      <a href="#" class="signup-link">New on 1mg? Sign Up</a>
+    </form>
+    <!-- Terms and Conditions -->
+    <p class="terms-text">By logging in, you agree to our <br> <a href="#">Terms and Conditions</a> & <a href="#">Privacy Policy</a>.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
