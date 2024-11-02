@@ -3,8 +3,82 @@
     margin: 0;
     padding: 0;
   }
-  body {
-    font-family: Arial, sans-serif;
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003399;
+  padding: 15px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  /* background-color: #fff; Optional: Keep background color to ensure visibility */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Add shadow for better visibility */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #003399;
+  border-radius: 3px;
+}
+
+.search-button {
+  /* background-color: #003399; */
+  border: none;
+  cursor: pointer;
+  /* padding: 5px; */
+  margin-left: 5px;
+  position: relative;
+  left: -32px;
+  
+
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-login-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-login-button {
+  background-color: #003399;
+  color: white;
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* ****************login page***************** */
+  .login-page{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +151,7 @@
     border-radius: 5px;
   }
   .login-button {
-    background-color: #ff6b6b;
+    background-color: #ff4141;
     border: none;
     color: white;
     padding: 10px;
@@ -87,14 +161,33 @@
     font-weight: bold;
   }
   .login-button:hover {
-    background-color: #ff4d4d;
+    background-color: #ff6c6c;
+    text-decoration: underline;
   }
-  .signup-link {
-    display: block;
-    margin: 20px;
-    text-align: center;
-    color: #ff6b6b;
-    font-size: 0.9em;
+  .signup-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+  }
+  .signup-button {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    background-color: #3456fc;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  .signup-button:hover{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: underline;
+    background-color: #5d78ff;
   }
   
 

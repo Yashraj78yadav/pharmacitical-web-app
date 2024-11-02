@@ -1,0 +1,205 @@
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003399;
+    padding: 15px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    /* background-color: #fff; Optional: Keep background color to ensure visibility */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Add shadow for better visibility */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 40%;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #003399;
+    border-radius: 3px;
+  }
+  
+  .search-button {
+    /* background-color: #003399; */
+    border: none;
+    cursor: pointer;
+    /* padding: 5px; */
+    margin-left: 5px;
+    position: relative;
+    left: -32px;
+    
+  
+  }
+  
+  .search-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .nav-login-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-login-button {
+    background-color: #003399;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  /* **********container section*************** */
+
+/* Centering Wrapper */
+.center-wrapper {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Signup Container Styling */
+.signup-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container:hover{
+    background-color:#eae1e1  
+}
+
+.signup-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Sections */
+.form-sections {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Left and Right Sections */
+.left-section, .right-section {
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ff6f61;
+}
+#state-label{
+    margin-top: 30px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #e65247;
+}
+
+/* Additional Styling */
+.signup-container .optional-label {
+    color: #777;
+    font-size: 12px;
+}
+
+.signup-container a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+.submit-para{
+    justify-content: center;
+    text-align: center;
+    
+}

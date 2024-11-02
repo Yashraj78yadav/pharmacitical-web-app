@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiyogi-Pharmaceutical</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+      <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="../adiyogi-logo.jpg" alt="ADIYOGI Logo" class="logo">
+      <span class="brand-name">ADIYOGI</span>
+    </div>
+    <div class="search-container">
+      <input type="text" placeholder="Search Medicines" class="search-input">
+      <button class="search-button">
+        <img src="https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-vector-search-icon-png-image_924820.jpg"
+          alt="Search Icon" class="search-icon">
+      </button>
+    </div>
+    <div class="nav-login-container">
+      <button class="nav-login-button">LOGIN</button>
+    </div>
+  </nav>
+  <!-- *********** sign up section************** -->
+    <div class="center-wrapper">
+        <div class="signup-container">
+            <h2>Sign Up </h2>
+            <form id="signupForm">
+                <div class="form-sections">
+                    <!-- Left Section -->
+                    <div class="left-section">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required>
+
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+<!-- 
+                        <fieldset>
+                            <legend>Address</legend>
+                            <label for="street">Street:</label>
+                            <input type="text" id="street" name="street" required>
+
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" required>
+
+                            <label for="zipCode">Zip Code:</label>
+                            <input type="text" id="zipCode" name="zipCode" required>
+                        </fieldset> -->
+                    </div>
+
+                    <!-- Right Section -->
+                    <div class="right-section">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName">
+
+                        <!-- <label for="state" id="state-label">State:</label>
+                        <input type="text" id="state" name="state" required>
+
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required>
+
+                        <label for="role">Role:</label>
+                        <input type="text" id="role" name="role" required> -->
+                    </div>
+                </div>
+                <button type="submit">Register</button>
+                <p class="submit-para">Or </p>
+                <button type="submit"> Sign Up With Google</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
