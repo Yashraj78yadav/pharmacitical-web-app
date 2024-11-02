@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adiyogi-pharmacitical</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+       <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../adiyogi-logo.jpg" alt="ADIYOGI Logo" class="logo">
+            <span class="brand-name">ADIYOGI</span>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search Medicines" class="search-input">
+            <button class="search-button">
+                <img src="https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-vector-search-icon-png-image_924820.jpg"
+                    alt="Search Icon" class="search-icon">
+            </button>
+        </div>
+    </nav>
+<div class="add-container">
+    <div class="container">
+        <h1>Add Product</h1>
+        <form id="productForm">
+        <div class="form-group">
+            <label for="brandName">Brand Name:</label>
+            <input type="text" id="brandName" required>
+        </div>
+        <div class="form-group">
+            <label for="genericName">Generic Name:</label>
+            <input type="text" id="genericName" required>
+        </div>
+        <div class="form-group">
+            <label for="mfgDate">Mfg Date:</label>
+            <input type="date" id="mfgDate" required>
+        </div>
+        <div class="form-group">
+            <label for="expDate">Exp Date:</label>
+            <input type="date" id="expDate" required>
+        </div>
+        <div class="form-group">
+            <label for="rate">Rate:</label>
+            <input type="number" id="rate" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="mrp">MRP:</label>
+            <input type="number" id="mrp" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="batchNumber">Batch Number:</label>
+            <input type="text" id="batchNumber" required>
+        </div>
+        <button type="submit" class="submit-button">Add Product</button>
+        </form>
+    </div>
+</div>    
+  <script src="script.js"></script>
+</body>
+</html>
